@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+.main {
+  position: relative;
+  min-width: 100vw;
+  min-height: 800px;
+}
+
+.heart {
+  left: calc(50% - 400px);
+  top: calc(50% - 400px);
+  width: 800px;
+  height: 800px;
+  position: absolute;
+}
+
+.heart-front {
+  transition: -moz-transform linear 300ms;
+  cursor: pointer;
+}
+
+.open {
+  transform: rotate3d(-3, -2, 0, 180deg) translate3d(25%, -35%, 0);
+  -moz-transform: rotate3d(-3, -2, 0, 180deg) translate3d(25%, -35%, 0);
+  pointer-events: none;
+}
+
+.message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  color: #ff0083;
+  padding: 10px;
+  background-color: #ffffff59;
+  font-family: Georgia, serif;
+  border-bottom: 3px #ff0083 solid;
+  user-select: none;
+  max-width: 300px;
+  text-align: center;
+}
